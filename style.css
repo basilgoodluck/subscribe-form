@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:wght@300&family=Smooch&family=Whisper&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+    overflow: hidden;
+    height: 100vh;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.form-container form{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    box-shadow: -1px 5px 10px 5px rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
+.form-container form .my-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.my-profile .profile-picture{
+    width: 50px;
+    border-radius: 50%;
+}
+.socials a{
+    display: inline-block;
+    margin-left: 10px;
+}
+.socials img{
+    width: 20px;
+}
+.form-container form input{
+    background-color: #eee;
+    box-shadow: -1px 5px 10px 5px rgba(0,0,0,0.25);
+    padding: 10px 5px;
+    width: 250px;
+    border-radius: 10px;
+}
+.form-body{
+    display: grid;
+    row-gap: 5px;
+
+}
+.form-body h1{
+   text-align: right;
+   font-family: 'Whisper', cursive; 
+}
+.form-body h1 span{
+    color: darkblue;
+    /* font-size: px; */
+}
+.form-body p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.form-container .form-body input[type="submit"]{
+    background-color: orangered;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    transition: .87s ease;
+    cursor: pointer;
+}
+.form-container .form-body input[type="submit"]:hover{
+    background-color: black;
+}
+form #respect{
+    text-align: center !important;
+    font-size: 11pxs;
+}
