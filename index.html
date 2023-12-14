@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basil Goodluck</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="form-container">
@@ -21,22 +20,23 @@
                 </div>
                 <div class="form-body">
                     <h1><span>Fill out this form</span></h1>
-                    <p><span class="fName">FullName</span></p>
-                    <input type="text" id="fName">
+                    <p><span  class="fName">FullName</span></p>
+                    <input type="text" id="fName" placeholder="What is your name" onkeyup = "validate()">
                     <p><span>Email</span></p>
-                    <input type="text" id="email">
+                    <input type="text" id="email" placeholder="Enter email">
                     <p><span>Phone</span></p>
-                    <input type="text" id="phoneNumber">
+                    <input type="text" id="phoneNumber" placeholder="Enter phone number">
                     <p><span>Password</span></p>
-                    <input type="text" id="password">
+                    <input type="text" id="password" placeholder="Enter a unique password">
                     <p><span>Confirm Password</span></p>
-                    <input type="text" id="confirmPassword">
-                    <input type="submit" class="submit" id="submit">
+                    <input type="text" id="confirmPassword" placeholder="Confirm password">
+                    <input type="submit" class="submit" id="submit" onclick="validate()" onsubmit="validate()">
                 </div>
                 <p id="respect"><span>we respect your privacy</span></p>
             </form>
             
         </div>
     </div>
+    <script src="/script.js"></script>
 </body>
 </html>

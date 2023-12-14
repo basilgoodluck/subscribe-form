@@ -1,10 +1,20 @@
-const fName = document.getElementById("fName")
+var nameError = document.getElementById("nameError")
 
 
-const validate = function (fName) {
-    fName.addEventListener("keyup", ()=>{
-        if(fName.match(/[0-9]/)){
-            (fName.value).style.color = "red"       
-        }
-    })
+
+function validate(){
+    let name = document.getElementById("fName")
+    if (name.value == ""){
+        name.classList.add("error");
+        name.classList.remove("correct")
+        return false
+    }
+    else if(!name.value.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+        name.classList.add("error");
+        name.classList.remove("correct")
+        return false
+    }
+    else{
+        name.classList.add("correct")
+    }
 }

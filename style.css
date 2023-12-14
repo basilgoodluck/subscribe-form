@@ -26,6 +26,7 @@ body{
     padding: 1rem 2rem;
     box-shadow: -1px 5px 10px 5px rgba(0,0,0,0.25);
     border-radius: 10px;
+    width: 100%;
 }
 .form-container form .my-profile{
     display: flex;
@@ -36,6 +37,7 @@ body{
 .my-profile .profile-picture{
     width: 50px;
     border-radius: 50%;
+    border: 3px solid orangered;
 }
 .socials a{
     display: inline-block;
@@ -48,8 +50,15 @@ body{
     background-color: #eee;
     box-shadow: -1px 5px 10px 5px rgba(0,0,0,0.25);
     padding: 10px 5px;
-    width: 250px;
+    width: 280px;
     border-radius: 10px;
+}
+
+.form-container form .error{
+    border: 1px dotted red;
+}
+.form-container form .correct{
+    border: 1px solid green;
 }
 .form-body{
     display: grid;
@@ -67,6 +76,9 @@ body{
 .form-body p{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .form-container .form-body input[type="submit"]{
     background-color: orangered;
